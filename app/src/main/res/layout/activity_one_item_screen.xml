@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    tools:context=".OneItemScreen">
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/goback"
+        android:layout_height="30dp"
+        android:src="@drawable/chevronleft"/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageSelected"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/dish1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/orangecircle"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/grey_circle"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/grey_circle"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/grey_circle"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:textSize="28sp"
+        android:textFontWeight="800"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/dishSelected"
+        android:text="Veggie tomato mix"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRICE"
+        android:textFontWeight="400"
+        android:id="@+id/priceSelected"
+        android:textSize="19sp"
+        android:layout_marginBottom="43dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#FA4A0C"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery info"
+        android:textSize="17sp"
+        android:layout_marginBottom="4dp"
+        android:textFontWeight="400"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textFontWeight="400"
+        android:text="Delivered between monday aug and thursday 20 from 8pm to 91:32 pm"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/on_board_screen_button_radius"
+        android:backgroundTint="#FA4A0C"
+        android:fontFamily="@font/nunito"
+        android:text="Add to card"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="1000"
+        android:textSize="17sp" />
+</LinearLayout>
